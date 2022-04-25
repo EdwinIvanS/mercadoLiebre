@@ -6,16 +6,16 @@ const pathPublica= path.resolve(__dirname, "./public");
 app.use(express.static(pathPublica));
 
 
-
+/*
 app.listen(3030, ()=>
     console.log("Servidor corriendo")   
 )
-
-/*
-app.listen(process.env.PORT || 3000, Function(){
-    console.log('servidor corrioendo en el puerto 3000');
-})
 */
+
+app.listen(process.env.PORT || 3000, () =>{
+    console.log("servidor corrioendo en el puerto 3000");
+})
+
 
 app.get("/home", (req, resp)=>{ 
     let rutaHtml = path.join(__dirname,"./views/index.html"); 
