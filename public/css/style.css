@@ -63,16 +63,20 @@ body {
 
 }
 
-.header-barraBusqueda i{
-    align-items: center;
-    background-color: white;
-    border-radius: 3px;    
+.header-barraBusqueda form{
+    display: flex;
+}
+
+.header-barraBusqueda button{
+    border: 1px solid #ebebeb;
+    border-radius: 3px;
+}
+
+.header-barraBusqueda button i{
+    align-items: center;    
     display: flex;
     justify-content:center;
-    height: 32px;
-    margin-left: -4px;
     text-align: center;
-    width: 23px;
 }
 
 /*****MENSAJE COMPRA**********/
