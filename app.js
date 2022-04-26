@@ -8,6 +8,24 @@ app.use(express.static(pathPublica));
 
 
 app.get("/home", (req, resp)=>{ 
+    resp.sendFile(path.resolve("./views/index.html"));
+})
+
+app.get("/register", (req, resp)=>{
+    resp.sendFile(path.resolve("./views/register.html"));
+})
+
+app.get("/login", (req, resp)=>{
+    resp.sendFile(path.resolve("./views/login.html"));
+})
+
+app.listen(port, () => {
+    console.log("Server is running");
+});
+
+
+/*
+app.get("/home", (req, resp)=>{ 
     let rutaHtml = path.join(__dirname,"./views/index.html"); 
     resp.sendFile(rutaHtml);
 })
@@ -26,9 +44,4 @@ app.get("/login", (req, resp)=>{
 app.listen(3030, ()=>
     console.log("Servidor corriendo")   
 )
-
-/*
-app.listen(port, () => {
-    console.log("Server is running");
-});
 */
