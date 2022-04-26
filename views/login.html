@@ -69,10 +69,10 @@
     <main>
         <form action="/home">
             <div class="formulario-login">
-                <input type="text" placeholder="Nombre de usuario" name="usuario" id="usuario" required>
+                <input type="text" placeholder="Nombre de usuario" name="usuario" id="usuario" minlength="5" maxlength="40" required>
             </div>
             <div class="formulario-login">
-                <input type="text" placeholder="Elegì tu contraseña" name="password" id="password" required>
+                <input type="password" placeholder="Elegì tu contraseña" name="password" id="password" minlength="5" maxlength="40" required pattern="[A-Za-z0-9]{5,40}">
             </div>
             <div class="btn-enviar">
                 <button type="submit">Enviar</button>

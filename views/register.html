@@ -116,10 +116,10 @@
                     <input type="file" name="archivo" accept=".jpg, .png" multiple>
                 </div>
                 <div class="formato-div">
-                    <input type="text" placeholder="Contraseña" name="usuario" id="password" required>
+                    <input type="password" placeholder="Contraseña" name="usuario" id="password" minlength="5" maxlength="40" required pattern="[A-Za-z0-9]{5,40}">
                 </div>
                 <div class="formato-div">
-                    <input type="text" placeholder="Confirmar contraseña" name="password" id="password" required>
+                    <input type="password" placeholder="Confirmar contraseña" name="password" id="password" minlength="5" maxlength="40" required pattern="[A-Za-z0-9]{5,40}">
                 </div>
                 <div class="btn-enviarRegistro">
                     <button type="submit">Enviar</button>
